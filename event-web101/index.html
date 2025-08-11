@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Writing in Color</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body>
+        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+        <div class="navbar">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Muse">Meet your Muse</a></li>
+            <li><a href="#Agents">Connect with Agents</a></li>
+            <li><a href="#Deal">Make a Deal</a></li>
+            <!--<li class="dark-mode-toggle"><a href="#DarkMode">Toggle Dark Mode Nav</a></li> -->
+            <button type="button" id=dark-mode-toggle >Dark Mode</button>
+        </ul>
+        </div>
+        <!-- headings
+        
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container">
+        <div id="header-item">
+            <img id="header-img" src="./img/logo.png"/>
+        </div>
+        <div id="header-item">
+            <div class="title-container">
+                <h1>Writing in Color Summit</h1>
+                <h2>Your Works Matter. Let’s Get Them Published.</h2>
+            </div>
+        <div class="header-button">
+            <button type="button">Sign Up</button>
+            <button type="button">Buy Your Seat</button>
+        </div>   
+        </div>
+        </div>
+            
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="About">About the Event</h2>
+        <p>An event for Black and Latine writers to get their stories heard, meet with agents, and connect with fellow writers.</p>
+
+        <h3 id="exciting-message">The Next Chapter of your Work is Here.</h3>
+        <h4>What to Expect</h4>
+        <ul>
+            <li> <b>Submit overview of work</b> <i>This is how we'll match you with participating publishers</i></li>
+            <li> <b>Share favorite pieces of current work</b> <i>We'll publish on site & submit to agents interested in learning more about your work.</i></li>
+            <li> <b>Match with participating publishers & writers</b> <i>Network in a cohort of writers with similar works.</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Event Schedule</h2>
+
+        <div class="event-container">
+            <div class="event-card">
+                <img alt="A picture of a compass" src="./img/compass-bg.png"/>
+                <h3 id="Muse">1 | Meet Your Muse</h3>
+                 <p>Show up and meet fellow writers amateur, established, or otherwise.</p>
+            </div>
+
+            <div class="event-card">
+                <img alt="A picture of a typewriter" src="./img/type-bg.png"/>
+                <h3 id="Agents">2 | Connect with Agents</h3>
+                 <p>Network and share your work with agents tailored to your genre or craft.</p>
+            </div>
+
+            <div class="event-card">
+                <img alt="A picture of a lamp atop a stack of books." src="./img/lamp-bg.png"/>
+                <h3 id="Deal">3 | Make a Deal</h3>
+                <p>Get your work on the next step toward publishing.</p>
+            </div>
+        </div>
+
+
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+         <!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+<div id="rsvp">
+    <h2>RSVP!</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <!-- info goes here -->
+           Whether you're unpublished or independent, this event offers an opportunity for everyone looking to break into
+           traditional publishing without compromising on your story. Sign up to take your work to the next step today!
+        </div>
+        <div class="rsvp-participants">
+            <p>🖊️ DJ from Texas has RSVP'd!</p>
+            <p>🖊️ Amy from New York has RSVP'd!</p>
+            <p>🖊️ Teresa from Montana has RSVP'd!</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
+            <label>Home State</label>
+            <input type="text" id="hometown" name="hometown" placeholder="New Jersey">
+
+            <label>Email</label>
+            <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
+            <!-- form inputs go here -->
+        </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+         <!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p id="rsvp-success">Here's to the adventure ahead!</p>
+           <p id="thanks-content"> Placeholder text</p> <!-- Text element here -->
+           <p id="confirmation">You'll receive confirmation shortly.</p>
+        </div>
+        <div id="modal-item">
+           <img id="success-image" src="./img/feather.png"><!-- Image element here -->
+        </div>
+    </div>
+</div>
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Free Resources for Writers</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://jedherne.com/character-course/?video=nuRne36LkNs">
+            <article>
+                <h3>Jed Herne's 5 Day Character Writing Course</h3>
+                <p>Learn how to write realistic, captivating characters with this quick course. </p>
+            </article>
+        </a>
+         <a class="block" href="https://drive.google.com/file/d/1QioVpwohPHzFXAGKmuk4eIC4WWizAOAt/view">
+            <article>
+                <h3>Writer Skill Assessment</h3>
+                <p>Free workbook to assess your current skills. </p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+         <div class="footer">
+            <a href="https://www.stackedupsummit.org/">Inspired By ColorStack</a>
+            <span class="footer-separator">|</span>
+            <a href="https://www.google.com/search?sca_esv=469ed175b30edb67&sxsrf=AE3TifNXXParxEZo9hBxeQZ8LQrK2__U6A:1751841932268&q=connect+4&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeioyp3OhN11EY0n5qfq-zENyQuF3_WaPI4Qgb6AZzy-etFjo9fqZ_m1LmwOk0Tw7NlugVBqJ2aYQkP3knYTQiMAm7VMYCShUYFAjfab01LRPu7T6r7JLyXh4g10wM4MIuhgmcw9MWBeBQodDsJvoIkm6a8gjQ8MCeXyHrPcd-p2hF-AVnA&sa=X&ved=2ahUKEwi8iM3gp6mOAxXaM1kFHRPNFqUQtKgLKAF6BAgQEAE&biw=1512&bih=945&dpr=2#vhid=QCgGLUkl5oroqM&vssid=mosaic">Connect</a>
+         </div>
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+         <script src="index.js"></script>
+    </body>
+</html>
